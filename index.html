@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Quiz Game</title>
+    <meta charset="UTF-8">
+    <link rel="icon" href="imgs/Quiz-PNG-Image.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <link rel="stylesheet" href="bootstrap-5.3.0-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="style/all.css" />
+    <link href="img/favicon.ico" rel="icon" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Cairo:wght@200;300&family=Dancing+Script:wght@700&family=Geologica:wght@800&family=Inter:wght@400;600;700&family=Open+Sans:ital,wght@0,400;1,400;1,500;1,600;1,700;1,800&family=Pacifico&family=Roboto:ital,wght@0,100;1,100&family=Work+Sans:wght@300&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+ <div class="container-fluid min-vh-100 d-flex flex-column justify-content-center align-items-center">
+  
+  <!-- title page -->
+  <div class="title heading animate__animated animate__zoomInDown my-4">
+    <h1>Quiz app</h1>
+  </div>
+  <!-- contnet page -->
+  <div class="container">
+   <div class="row">
+    <!-- form partation -->
+          <form
+            class="start-quiz col-lg-8 offset-lg-2 d-flex flex-column gap-3 animate__animated animate__fadeInBottomLeft"
+            id="quizOptions"
+          >
+            <div class="form-floating">
+              <select
+                class="form-select"
+                id="categoryMenu"
+                aria-label="category Select"
+              >
+                <option selected value="">Any Category</option>
+                <option value="9">General Knowledge</option>
+                <option value="27">Animals</option>
+                <option value="19">Science: Mathematics</option>
+                <option value="18">Science: Computers</option>
+                <option value="22">Geography</option>
+              </select>
+              <label for="categoryMenu">Choose Category</label>
+            </div>
+
+            <div class="form-floating">
+              <select
+                class="form-select"
+                id="difficultyOptions"
+                aria-label="difficulty Select"
+              >
+                <option selected value="easy">Easy</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+              </select>
+              <label for="difficultyOptions">Choose Difficulty Level</label>
+            </div>
+
+            <div class="form-floating">
+              <input
+                type="number"
+                class="form-control"
+                id="questionsNumber"
+                placeholder="Number of Questions"
+              />
+              <label for="QuestionsNumber">Number of Questions</label>
+            </div>
+
+            <button
+              type="button"
+              class="btn btn-start btn-outline-info w-25 m-auto"
+              id="startQuiz"
+            >
+              Start
+            </button>
+          </form>
+        </div>
+      </div>
+      <!-- questions partation -->
+      <div class="questions">
+        <div class="container">
+          <div class="row"></div>
+        </div>
+      </div>
+
+ </div>
+
+
+
+
+
+    <script src="js/code.jquery.com_jquery-3.7.0.min.js"></script>
+    <script src="bootstrap-5.3.0-dist/js/bootstrap.bundle.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
